@@ -59,15 +59,18 @@ section {
 
 input {
     outline: 0;
-    border: 2px solid blue;
-    width: 275px;
-    height: 50px;
+    border: 1.9px solid #9d9d9e86;
+    width: 400px;
+    height: 45px;
     padding: 0px 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #2c2c2c;
+    line-height: 56px;
+    margin: 10px 0px;
 }
 
-label {
-    color: rgb(141, 141, 141);
-}
+
 
 button {
     width: 100%;
@@ -84,7 +87,7 @@ button:hover {
     color: tomato;
     border: 3px solid;
     border-image: linear-gradient(45deg, #ee75de, #faaa15) 1;
-    background-image: linear-gradient(45deg, white, white);
+    background-image: linear-gradient(45deg, hsl(0, 0%, 100%), white);
     letter-spacing: 1px;
 }
 

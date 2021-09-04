@@ -14,10 +14,28 @@
 
     <section>
         <form action="form">
-            <div>
-                <input type="text" name="full-name" maxlength="80">
-                <label>Nome completo</label>
-                <span>teste</span>
+            <div class="input-value">
+                <input type="text" name="name" maxlength="80" aria-label="Nome completo" placeholder="Nome completo">
+            </div>
+
+            <div class="input-value">
+                <input type="email" name="email" maxlength="50" placeholder="E-mail">
+            </div>
+
+            <div class="input-value">
+                <input type="text" name="cpf" maxlength="11" placeholder="CPF">
+            </div>
+
+            <div class="input-value">
+                <input type="text" name="username" maxlength="16" placeholder="Nome de usuário">
+            </div>
+
+            <div class="input-value">
+                <input type="password" name="password" placeholder="Senha" maxlength="12">
+            </div>
+
+            <div class="input-value">
+                <input type="password" name="password" placeholder="Confirmar senha" maxlength="12">
             </div>
         </form>
     </section>
