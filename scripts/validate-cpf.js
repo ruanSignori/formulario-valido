@@ -1,4 +1,4 @@
-class ValidaCPF{
+class ValidateCPF{
     constructor(cpf){
         Object.defineProperty(this, 'cpfClear', {
             writable: false,
@@ -13,8 +13,8 @@ class ValidaCPF{
 
     generateNewCPF() {
         const cpf9Digits = this.cpfClear.slice(0, -2);
-        const firstDigit = ValidaCPF.gerateDigit(cpf9Digits);
-        const secondDigit = ValidaCPF.gerateDigit(cpf9Digits + firstDigit);
+        const firstDigit = ValidateCPF.gerateDigit(cpf9Digits);
+        const secondDigit = ValidateCPF.gerateDigit(cpf9Digits + firstDigit);
         this.newCPF = cpf9Digits + firstDigit + secondDigit;
     }
 
@@ -42,4 +42,4 @@ class ValidaCPF{
     }
 }
 
-let cpfValido = new ValidaCPF('020.298.590-36');
+let cpfValido = new ValidateCPF('020.298.590-36');
