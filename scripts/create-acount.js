@@ -16,3 +16,4 @@ class FormValidation{
     }
 }
 
+const validated = new FormValidation();
