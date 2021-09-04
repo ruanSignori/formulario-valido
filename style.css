@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1c1c27fa;
+    height: 100vh;
+    padding: 20px;
+}
+
+.create-account-txt {
+    width: 100%;
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 20px 0px 10px 0px;
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+
+.create-account-txt span {
+    margin-left: 100px;
+}
+
+.container {
+    width: 1200px;
+    height: 1200px;
+    position: fixed;
+    right: -580px;
+    bottom: -550px;
+    border-radius: 51%;
+    background-image: linear-gradient(45deg, #faaa15, #ee75de);
+}
+
+.container img {
+    position: fixed;
+    bottom: 50px;
+    right: 150px;
+}
+
+section {
+    background-color: #ffffff;
+    max-width: 750px;
+    min-height: 500px;
+    margin: 50px 0px 0px 75px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.button-create-account {
+    max-width: 200px;
+    margin: 30px 0px 0px 75px;
+}
+
+input {
+    outline: 0;
+    border: 2px solid blue;
+    width: 275px;
+    height: 50px;
+    padding: 0px 5px;
+}
+
+label {
+    color: rgb(141, 141, 141);
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #ee75de, #faaa15);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: all 0.2s;
+    color: tomato;
+    border: 3px solid;
+    border-image: linear-gradient(45deg, #ee75de, #faaa15) 1;
+    background-image: linear-gradient(45deg, white, white);
+    letter-spacing: 1px;
+}
+
+@media (max-width:1550px){
+    .container {
+        right: -700px;
+    }
+
+    .container img {
+        right: 50px;
+    }
+}
+
+@media (max-width: 1420px){
+    section {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .create-account-txt {
+        text-align: center;
+    }
+
+    .create-account-txt > span {
+        margin: 0px;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .button-create-account {
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    body {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 450px){
+    .create-account-txt {
+        font-size: 2.4em;
+    }
+}
