@@ -11,38 +11,41 @@
     <div class="create-account-txt">
         <span>Crie sua conta</span>
     </div>
+        <div class="itens-form">
+            <form action="form" class="form">
+                <div class="input-value">
+                    <input type="text" name="name" maxlength="80" aria-label="Nome completo" placeholder="Nome completo">
+                </div>
 
-    <section>
-        <form action="form">
-            <div class="input-value">
-                <input type="text" name="name" maxlength="80" aria-label="Nome completo" placeholder="Nome completo">
+                <div class="input-value">
+                    <input type="email" name="email" maxlength="50" placeholder="E-mail">
+                </div>
+
+                <div class="input-value">
+                    <input type="text" name="cpf" maxlength="11" placeholder="CPF">
+                </div>
+
+                <div class="input-value">
+                    <input type="text" name="username" maxlength="16" placeholder="Nome de usuário">
+                </div>
+
+                <div class="input-value">
+                    <input type="password" name="password" placeholder="Senha" maxlength="12">
+
+                    <span class="view-password">
+                        <img src="imagens/password.png" width="16px">
+                    </span>
+                </div>
+
+                <div class="input-value">
+                    <input type="password" name="password" placeholder="Confirmar senha" maxlength="12">
+                </div>
+            </form>
+
+            <div class="button-create-account">
+                <button>Criar conta</button>
             </div>
-
-            <div class="input-value">
-                <input type="email" name="email" maxlength="50" placeholder="E-mail">
-            </div>
-
-            <div class="input-value">
-                <input type="text" name="cpf" maxlength="11" placeholder="CPF">
-            </div>
-
-            <div class="input-value">
-                <input type="text" name="username" maxlength="16" placeholder="Nome de usuário">
-            </div>
-
-            <div class="input-value">
-                <input type="password" name="password" placeholder="Senha" maxlength="12">
-            </div>
-
-            <div class="input-value">
-                <input type="password" name="password" placeholder="Confirmar senha" maxlength="12">
-            </div>
-        </form>
-    </section>
-
-    <div class="button-create-account">
-        <button>Criar Conta</button>
-    </div>
+        </div>
     <div class="container">
         <div>
             <img src="imagens/my app.svg" alt="Imagem minimalista de uma pessoa olhando o celular" width="500px">
