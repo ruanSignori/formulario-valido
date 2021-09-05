@@ -42,4 +42,4 @@ class ValidateCPF{
     }
 }
 
-let cpfValido = new ValidateCPF('020.298.590-36');
+let cpfValido = new ValidateCPF();

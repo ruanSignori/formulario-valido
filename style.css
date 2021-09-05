@@ -32,7 +32,7 @@ body {
     height: 1200px;
     position: fixed;
     right: -580px;
-    bottom: -550px;
+    bottom: -450px;
     border-radius: 51%;
     background-image: linear-gradient(45deg, #faaa15, #ee75de);
 }
@@ -40,11 +40,11 @@ body {
 .container img {
     position: fixed;
     bottom: 50px;
-    right: 150px;
+    right: 170px;
 }
 
 .itens-form {
-    max-width: 410px;
+    max-width: 420px;
     padding: 10px;
     margin: 50px 0px 0px 100px;
 }
@@ -59,10 +59,10 @@ input {
     outline: 0;
     border: 1.9px solid #9d9d9e86;
     width: 100%;
-    height: 45px;
+    height: 55px;
     padding: 0px 5px;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #2c2c2c;
     line-height: 56px;
     margin: 10px 0px;
@@ -83,7 +83,7 @@ button {
 }
 
 button:hover {
-    transition: all 0.2s;
+    transition: all 0.2s ease-in;
     color: tomato;
     border: 3px solid;
     border-image: linear-gradient(45deg, #ee75de, #faaa15) 1;
