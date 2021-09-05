@@ -1,8 +1,8 @@
-
-const cpf = document.querySelector('.cpf');
-
-
-
+let cpf = document.querySelector('.cpf');
+    
+while(cpf.value.length >= 3) {
+    console.log('opa');
+}
 
 class FormValidation{
     constructor (){
@@ -19,7 +19,6 @@ class FormValidation{
 
     handleSubmit(e) {
         e.preventDefault();
-        console.log(this.form)
     }
 
 }

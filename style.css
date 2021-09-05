@@ -69,10 +69,23 @@ input {
 }
 
 .view-password {
-    position: fixed;
+    display: flex;
+
 }
 
-button {
+.view-password input {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.view-password button {
+    cursor: pointer;
+    margin-top: 10px;
+    height: 55px;
+    width: 20%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.button-form-validate {
     width: 100%;
     height: 60px;
     font-size: 1.3em;
@@ -82,7 +95,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button-form-validate:hover {
     transition: all 0.2s ease-in;
     color: tomato;
     border: 3px solid;
