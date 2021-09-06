@@ -1,7 +1,8 @@
-let cpf = document.querySelector('.cpf');
-    
-while(cpf.value.length >= 3) {
-    console.log('opa');
+let cpf = document.querySelector('input.cpf');
+console.log(cpf)
+
+if(cpf.length === 3) {
+    cpf.style.color = 'red';
 }
 
 class FormValidation{

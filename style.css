@@ -69,6 +69,10 @@ input {
     margin: 10px 0px;
 }
 
+input[type='text']:out-of-range {
+    border: 2px solid rgb(240, 78, 78);
+}
+
 .view-password {
     display: flex;
 }
