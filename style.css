@@ -41,6 +41,7 @@ body {
     position: fixed;
     bottom: 50px;
     right: 170px;
+    filter: drop-shadow(2px 4px 4px #1a080875);
 }
 
 .itens-form {
@@ -70,7 +71,6 @@ input {
 
 .view-password {
     display: flex;
-
 }
 
 .view-password input {
