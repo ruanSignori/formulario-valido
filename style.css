@@ -101,11 +101,16 @@ input[type='text']:out-of-range {
 
 .button-form-validate:hover {
     transition: all 0.2s ease-in;
-    color: tomato;
+    color: #ff6347;
     border: 3px solid;
     border-image: linear-gradient(45deg, #ee75de, #faaa15) 1;
     background-image: linear-gradient(45deg, hsl(0, 0%, 100%), white);
     letter-spacing: 1px;
+}
+
+.text-error {
+    color: rgb(221, 66, 66);
+    font-size: 1em;
 }
 
 @media (max-width:1550px){
