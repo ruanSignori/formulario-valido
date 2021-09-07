@@ -5,44 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="create-account-txt">
         <span>Crie sua conta</span>
     </div>
         <div class="itens-form">
-            <form action="form" class="form">
+            <form class="form">
                 <div class="input-value">
-                    <input type="text" name="name" maxlength="80" aria-label="Nome completo" placeholder="Nome completo" class="valid">
+                    <input type="text" name="name" maxlength="80" aria-label="Nome completo" placeholder="Nome completo" class="valid name">
                 </div>
 
                 <div class="input-value">
-                    <input type="email" name="email" maxlength="161" placeholder="E-mail" class="valid">
+                    <input type="email" name="email" maxlength="161" placeholder="E-mail" class="valid email">
                 </div>
 
                 <div class="input-value">
-                    <input type="text" name="cpf" maxlength="11" placeholder="CPF" class="cpf valid">
+                    <input type="text" name="cpf" maxlength="11" placeholder="CPF" class="valid cpf">
                 </div>
 
                 <div class="input-value">
-                    <input type="text" name="username" maxlength="16" placeholder="Nome de usuário" class="valid">
+                    <input type="text" name="username" minlength="3" maxlength="16" placeholder="Nome de usuário" class="valid username">
                 </div>
 
                 <div class="input-value view-password">
-                    <input type="password" name="password" placeholder="Senha" maxlength="22" class="password valid">
+                    <input type="password" name="password" placeholder="Senha" minlength="6" maxlength="22" class="password valid">
 
-                    <button title="Ver senha" class="button-password">
+                    <button title="Ver senha" class="button-password" type="button">
                         <img src="imagens/olho-senha.png" width='28px' class="img-password">
                     </button>
                 </div>
 
                 <div class="input-value">
-                    <input type="password" name="password" placeholder="Confirmar senha" maxlength="22" class="valid">
+                    <input type="password" name="password" placeholder="Confirmar senha" maxlength="22" class="valid repeat-password">
                 </div>
 
                 <div class="button-create-account">
-                    <button class="button-form-validate" title="Criar conta">Criar conta</button>
+                    <a href="welcome.html" target="_self">
+                        <button class="button-form-validate" title="Criar conta" type="submit">Criar conta</button>
+                    </a>
                 </div>
             </form>
         </div>

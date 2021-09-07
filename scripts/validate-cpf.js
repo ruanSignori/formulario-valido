@@ -1,4 +1,8 @@
-/*class ValidateCPF{
+/*
+    Código feito em aula da Udemy
+*/
+
+class ValidateCPF{
     constructor(cpf){
         Object.defineProperty(this, 'cpfClear', {
             writable: false,
@@ -31,7 +35,7 @@
         return digit <= 9 ? String(digit) : '0';
     }
 
-    valida() {
+    valid() {
         if (!this.cpfClear) return false;
         if (typeof this.cpfClear !== 'string') return false;
         if (this.cpfClear.length !== 11) return false;
@@ -42,4 +46,3 @@
     }
 }
 
-let cpfValido = new ValidateCPF();*/

@@ -108,7 +108,7 @@ input[type='text']:out-of-range {
     letter-spacing: 1px;
 }
 
-.text-error {
+.error-text {
     color: rgb(221, 66, 66);
     font-size: 1em;
 }
