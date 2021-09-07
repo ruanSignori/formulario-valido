@@ -47,4 +47,3 @@ class FormValidation{
 }
 
 const validated = new FormValidation();
-console.log(validated)

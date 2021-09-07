@@ -1,9 +1,9 @@
-class ValidateCPF{
+/*class ValidateCPF{
     constructor(cpf){
         Object.defineProperty(this, 'cpfClear', {
             writable: false,
             configurable: false,
-            value : cpf.replace(/\D+/g, '')
+            value: cpf.replace(/\D+/g, '')
         });
     }
 
@@ -42,4 +42,4 @@ class ValidateCPF{
     }
 }
 
-let cpfValido = new ValidateCPF();
+let cpfValido = new ValidateCPF();*/
