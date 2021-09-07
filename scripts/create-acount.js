@@ -19,6 +19,7 @@ class FormValidation{
         const passwordFieldsValid = this.validPassword();
 
         if (validFields && passwordFieldsValid) {
+            alert('Formulário enviado')
             this.form.submit();
         }
     }
