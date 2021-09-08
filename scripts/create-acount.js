@@ -1,5 +1,4 @@
 
-
 class FormValidation{
     constructor (){
         this.form = document.querySelector('.form');
