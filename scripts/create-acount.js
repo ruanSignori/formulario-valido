@@ -107,3 +107,10 @@ class FormValidation{
 }
 
 const validated = new FormValidation();
+
+/* 
+    Atualizações: Colocar ponto no cpf de forma interativa
+                    Animações
+                    Arrumar o input senha
+                    
+*/

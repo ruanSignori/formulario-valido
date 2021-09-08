@@ -9,11 +9,11 @@ button_password.addEventListener('click', e => {
         let typeInput = document.querySelector('.password');
 
         const imgPassword = document.querySelector('.img-password');
-        imgPassword.src = 'imagens/Senha-sem-traço.png';
+        imgPassword.src = 'imagens/eye.png';
 
         if (typeInput.type ==='password') {
 
-            imgPassword.src = 'imagens/olho-senha.png';
+            imgPassword.src = 'imagens/invisible.png';
             typeInput.type = 'text';
 
         } else typeInput.type = 'password';
