@@ -16,7 +16,6 @@ class FormValidation{
         e.preventDefault();
         const validFields = this.validFields();
         const passwordFieldsValid = this.validPassword();
-
         if (validFields && passwordFieldsValid) {
             alert('Formulário enviado')
             this.form.submit();
@@ -87,10 +86,12 @@ class FormValidation{
     }
 
     validateCPF(field) {
+        let valid = true;
         const cpf = new ValidateCPF(field.value);
 
         if(!cpf.valid()) {
             this.error(field, 'CPF inválido');
+            return valid = false
         }
 
         return true;
@@ -109,7 +110,8 @@ const validated = new FormValidation();
 
 /* 
     Atualizações: Colocar ponto no cpf de forma interativa
-                    Animações
-                    Arrumar o input senha
+        Animações
+        Arrumar o input senha
+        mover o placeholder pra cima quando focado
                     
 */

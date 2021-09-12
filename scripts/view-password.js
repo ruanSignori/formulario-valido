@@ -1,22 +1,25 @@
 console.log('Código inicado em 04/09/2021');
 
 
-const button_password = document.querySelector('.button-password');
+const input_password = document.querySelector('.password');
+const button = document.querySelector('.password-button');
 
-button_password.addEventListener('click', e => {
 
-    if (e.target === button_password) {
-        let typeInput = document.querySelector('.password');
+input_password.addEventListener('focusin', function(){
+    button.style.color = '#636363';
+}); 
 
-        const imgPassword = document.querySelector('.img-password');
-        imgPassword.src = 'imagens/eye.png';
+input_password.addEventListener('focusout', function(){
+    button.style.color = '#ffffff';
+});
 
-        if (typeInput.type ==='password') {
-
-            imgPassword.src = 'imagens/invisible.png';
-            typeInput.type = 'text';
-
-        } else typeInput.type = 'password';
-
-    };
+button.addEventListener('click', function() {
+    button.style.color = '#636363';
+    if (input_password.type === 'password') {
+        input_password.type = 'text';
+        button.innerHTML = 'Ocultar'
+    } else {
+        input_password.type = 'password'
+        button.innerHTML = 'Mostrar'
+    }
 });
