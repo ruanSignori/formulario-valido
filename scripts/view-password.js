@@ -23,3 +23,7 @@ button.addEventListener('click', function() {
         button.innerHTML = 'Mostrar'
     }
 });
+
+/*
+    Adicionar animação conforme tu digita o fundo laranja e rosa muda de cor
+*/

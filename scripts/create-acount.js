@@ -94,13 +94,14 @@ class FormValidation{
             return valid = false
         }
 
-        return true;
+        return valid;
     }
 
     error(field, msg) {
         const div = document.createElement('div');
         div.innerHTML = msg;
         div.classList.add('error-text');
+        field.style.border = '1.5px solid red';
         field.insertAdjacentElement('afterend', div);
     }
     
