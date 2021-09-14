@@ -116,3 +116,79 @@ const validated = new FormValidation();
         mover o placeholder pra cima quando focado
                     
 */
+
+/*
+    Código feito em aula da Udemy
+*/
+
+class ValidateCPF{
+    constructor(cpf){
+        Object.defineProperty(this, 'cpfClear', {
+            writable: false,
+            configurable: false,
+            value: cpf.replace(/\D+/g, '')
+        });
+    }
+
+    isSequence() {
+        return this.cpfClear.charAt(0).repeat(11) === this.cpfClear;
+    }
+
+    generateNewCPF() {
+        const cpf9Digits = this.cpfClear.slice(0, -2);
+        const firstDigit = ValidateCPF.gerateDigit(cpf9Digits);
+        const secondDigit = ValidateCPF.gerateDigit(cpf9Digits + firstDigit);
+        this.newCPF = cpf9Digits + firstDigit + secondDigit;
+    }
+
+    static gerateDigit(cpf9Digits) {
+        let total = 0;
+        let reverse = cpf9Digits.length + 1;
+
+        for (let stringOfCPF of cpf9Digits) {
+            total += reverse * Number(stringOfCPF);
+            reverse --;
+        }
+
+        const digit = 11 - (total % 11);
+        return digit <= 9 ? String(digit) : '0';
+    }
+
+    valid() {
+        if (!this.cpfClear) return false;
+        if (typeof this.cpfClear !== 'string') return false;
+        if (this.cpfClear.length !== 11) return false;
+        if (this.isSequence()) return false;
+        this.generateNewCPF();
+        
+        return this.newCPF === this.cpfClear;
+    }
+}
+
+
+const input_password = document.querySelector('.password');
+const button = document.querySelector('.password-button');
+
+
+input_password.addEventListener('focusin', function(){
+    button.style.color = '#636363';
+}); 
+
+input_password.addEventListener('focusout', function(){
+    button.style.color = '#ffffff';
+});
+
+button.addEventListener('click', function() {
+    button.style.color = '#636363';
+    if (input_password.type === 'password') {
+        input_password.type = 'text';
+        button.innerHTML = 'Ocultar'
+    } else {
+        input_password.type = 'password'
+        button.innerHTML = 'Mostrar'
+    }
+});
+
+/*
+    Adicionar animação conforme tu digita o fundo laranja e rosa muda de cor
+*/
