@@ -165,7 +165,7 @@ class ValidateCPF{
     }
 }
 
-
+//Mostra a senha
 const input_password = document.querySelector('.password');
 const button = document.querySelector('.password-button');
 
@@ -189,6 +189,9 @@ button.addEventListener('click', function() {
     }
 });
 
-/*
-    Adicionar animação conforme tu digita o fundo laranja e rosa muda de cor
-*/
+const cpf = document.querySelector('input.cpf');
+cpf.addEventListener("blur", function(){
+    cpf.value = cpf.value.match(/.{1,3}/g).join(".").replace(/\.(?=[^.]*$)/,"-");
+});
+
+

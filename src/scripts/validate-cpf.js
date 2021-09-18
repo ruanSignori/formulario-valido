@@ -1,3 +1,5 @@
+//SCRIPT DESABILITADO TEMPORARIAMENTE
+
 /*
     Código feito em aula da Udemy
 */
