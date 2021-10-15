@@ -1,6 +1,6 @@
 # Formulário válido
 
-Site com validação de formulário no front-end 90% completa.
+Site com validação de formulário no front-end.
 
 Foto logo abaixo mostrando como ficou o design do site.
 
